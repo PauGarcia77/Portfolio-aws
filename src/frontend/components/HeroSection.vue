@@ -10,7 +10,7 @@
           <p class="text-gray-500 mt-2 text-lg">Cloud Engineer · DevSecOps · AWS</p>
           <p class="text-gray-400 mt-3 max-w-lg text-sm leading-relaxed">
             Especializado en infraestructura cloud con AWS, automatización DevSecOps
-            y desarrollo seguro de software.......
+            y desarrollo seguro de software...
           </p>
           <div class="flex gap-2 mt-5 flex-wrap justify-center md:justify-start">
             <span v-for="tag in tags" :key="tag"
