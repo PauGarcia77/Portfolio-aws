@@ -3,7 +3,7 @@
     <div class="max-w-4xl mx-auto px-6">
       <div class="flex flex-col md:flex-row items-center gap-10">
         <div class="w-28 h-28 rounded-full bg-sky-100 flex items-center justify-center text-sky-700 text-3xl font-bold flex-shrink-0">
-          IP
+          PG
         </div>
         <div class="text-center md:text-left">
           <h1 class="text-3xl font-bold text-gray-900">Pau Garcia</h1>
