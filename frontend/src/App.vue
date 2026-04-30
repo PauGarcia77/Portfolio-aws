@@ -8,30 +8,37 @@ import ContactoSection from './components/ContactoSection.vue'
 </script>
 
 <template>
-  <div class="min-h-screen bg-gray-50">
+  <div class="relative min-h-screen overflow-x-hidden bg-black text-neutral-200">
+    <!-- Decorative background -->
+    <div class="pointer-events-none fixed inset-0 -z-10">
+      <div class="absolute inset-0 grid-bg opacity-60"></div>
+      <div class="absolute -top-32 -left-32 w-[28rem] h-[28rem] bg-white/5 rounded-full blur-3xl animate-blob"></div>
+      <div class="absolute top-1/3 -right-32 w-[28rem] h-[28rem] bg-white/5 rounded-full blur-3xl animate-blob delay-200"></div>
+      <div class="absolute bottom-0 left-1/3 w-[26rem] h-[26rem] bg-white/5 rounded-full blur-3xl animate-blob delay-400"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black"></div>
+    </div>
+
     <NavBar />
 
-    <main>
+    <main class="relative">
       <HeroSection />
-
       <ProyectosSection />
-
       <CertificacionesSection />
-
       <EducacionSection />
-
       <ContactoSection />
     </main>
 
-    <footer class="py-8 text-center text-gray-500 border-t">
-      <p>© {{ new Date().getFullYear() }} Pau García - Portfolio AWS</p>
+    <footer class="relative border-t border-white/5 py-10 text-center">
+      <div class="max-w-4xl mx-auto px-6">
+        <p class="text-sm text-neutral-500">
+          © {{ new Date().getFullYear() }}
+          <span class="text-neutral-200 font-medium">Pau García</span>
+          · Portfolio AWS
+        </p>
+        <p class="mt-2 text-xs text-neutral-600">
+          Diseñado y desplegado en la nube ☁
+        </p>
+      </div>
     </footer>
   </div>
 </template>
-
-<style>
-/* Estilos globales si los necesitas */
-html {
-  scroll-behavior: smooth;
-}
-</style>

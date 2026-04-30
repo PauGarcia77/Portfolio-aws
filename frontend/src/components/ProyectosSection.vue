@@ -1,23 +1,43 @@
 <template>
-  <section id="proyectos" class="py-20 bg-gray-50">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-xl font-semibold text-gray-900 mb-10">Proyectos</h2>
+  <section id="proyectos" class="relative py-24">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="mb-12">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-neutral-400">Mi trabajo</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">
+          Proyectos<span class="text-gradient">.</span>
+        </h2>
+        <div class="mt-4 h-px w-24 bg-gradient-to-r from-white/60 to-transparent"></div>
+      </div>
+
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div v-for="p in proyectos" :key="p.titulo"
-          class="bg-white border border-gray-200 rounded-xl p-6 hover:border-sky-300 transition-colors">
-          <h3 class="font-semibold text-gray-900">{{ p.titulo }}</h3>
-          <p class="text-sm text-gray-500 mt-2 leading-relaxed">{{ p.descripcion }}</p>
-          <div class="flex gap-2 mt-4 flex-wrap">
+        <article v-for="p in proyectos" :key="p.titulo"
+          class="group relative glass rounded-2xl p-6 overflow-hidden hover:border-white/30 transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="font-semibold text-lg text-white">{{ p.titulo }}</h3>
+            <span class="flex-shrink-0 inline-flex items-center justify-center w-9 h-9 rounded-lg bg-white/5 border border-white/10 text-neutral-200 group-hover:bg-white/10 group-hover:rotate-12 transition-all">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+              </svg>
+            </span>
+          </div>
+
+          <p class="text-sm text-neutral-400 mt-3 leading-relaxed">{{ p.descripcion }}</p>
+
+          <div class="flex gap-2 mt-5 flex-wrap">
             <span v-for="tag in p.tags" :key="tag"
-              class="bg-blue-50 text-blue-700 text-xs px-2 py-1 rounded">
+              class="bg-white/5 text-neutral-300 text-xs font-medium px-2.5 py-1 rounded-md border border-white/10">
               {{ tag }}
             </span>
           </div>
+
           <a v-if="p.link" :href="p.link" target="_blank"
-            class="inline-block mt-4 text-xs text-sky-500 hover:underline">
-            Ver proyecto →
+            class="inline-flex items-center gap-1.5 mt-5 text-sm font-medium text-white hover:text-neutral-300 transition-colors">
+            Ver proyecto
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M13 5l7 7-7 7"/>
+            </svg>
           </a>
-        </div>
+        </article>
       </div>
     </div>
   </section>
