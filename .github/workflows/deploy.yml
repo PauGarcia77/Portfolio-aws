@@ -5,10 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "src/**"         # Ahora vigila tu carpeta src real
-      - "public/**"
-      - "index.html"
-      - "package.json"
+      - "frontend/**"
       - ".github/**"
 
 permissions:
@@ -19,6 +16,9 @@ jobs:
   deploy:
     name: Build & Deploy
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend  # Todas las órdenes corren dentro de frontend/
 
     steps:
       - name: Checkout repository
@@ -29,13 +29,13 @@ jobs:
         with:
           node-version: "20"
           cache: "npm"
-          cache-dependency-path: package-lock.json # Sin el prefijo frontend/
+          cache-dependency-path: frontend/package-lock.json
 
       - name: Install dependencies
-        run: npm ci # Sin el working-directory
+        run: npm ci
 
       - name: Build for production
-        run: npm run build # Sin el working-directory
+        run: npm run build
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4

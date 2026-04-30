@@ -9,8 +9,8 @@
           <h1 class="text-3xl font-bold text-gray-900">Pau Garcia</h1>
           <p class="text-gray-500 mt-2 text-lg">Cloud Engineer · DevSecOps · AWS</p>
           <p class="text-gray-400 mt-3 max-w-lg text-sm leading-relaxed">
-            Especializado en infraestructura cloud con AWS, automatización DevSecOps
-            y desarrollo seguro de software.
+            Apasionado del desarrollo de software, terminando mi FP Superior en DAM y adentrándome en el mundo cloud. 
+            Aprendiendo AWS, DevOps y todo lo que rodea a la ingeniería en la nube con ganas de crecer y construir cosas que escalen.
           </p>
           <div class="flex gap-2 mt-5 flex-wrap justify-center md:justify-start">
             <span v-for="tag in tags" :key="tag"
@@ -25,5 +25,5 @@
 </template>
 
 <script setup>
-const tags = ['AWS Cloud', 'DevSecOps', 'Security+', 'Vue.js', 'CI/CD']
+const tags = ['AWS Cloud', 'DevSecOps', 'Vue.js', 'CI/CD']
 </script>

@@ -26,10 +26,10 @@
 <script setup>
 const educacion = [
   {
-    titulo: 'Grado en Ingeniería Informática',
-    centro: 'Universidad',
-    periodo: '2020 – 2024',
-    descripcion: 'Especialización en seguridad informática e infraestructura cloud.'
+    titulo: 'FP Superior DAM',
+    centro: 'El Cide',
+    periodo: '2024-2026',
+    descripcion: 'Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM) — Formación Profesional de Grado Superior. Especialización en el desarrollo de software para entornos de escritorio, móvil y web, con sólida base en programación orientada a objetos, bases de datos y despliegue de aplicaciones.'
   }
 ]
 </script>

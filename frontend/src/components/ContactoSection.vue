@@ -8,11 +8,11 @@
           class="bg-sky-500 text-white px-5 py-2 rounded-lg text-sm hover:bg-sky-600 transition-colors">
           LinkedIn
         </a>
-        <a href="https://github.com/tuperfil" target="_blank"
+        <a href="https://github.com/PauGarcia77" target="_blank"
           class="border border-gray-300 text-gray-700 px-5 py-2 rounded-lg text-sm hover:bg-gray-50 transition-colors">
           GitHub
         </a>
-        <a href="mailto:tuemail@gmail.com"
+        <a href="mailto:paugarciaparets@gmail.com"
           class="border border-gray-300 text-gray-700 px-5 py-2 rounded-lg text-sm hover:bg-gray-50 transition-colors">
           Email
         </a>

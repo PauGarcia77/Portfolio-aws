@@ -19,14 +19,8 @@
 <script setup>
 const certificaciones = [
   {
-    nombre: 'AWS Solutions Architect Associate',
+    nombre: 'AWS Cloud Practioner',
     emisor: 'Amazon Web Services',
-    año: '2024',
-    imagen: '/projects/comptia-security-plus.webp'
-  },
-  {
-    nombre: 'CompTIA Security+',
-    emisor: 'CompTIA',
     año: '2024',
     imagen: '/projects/comptia-security-plus.webp'
   }

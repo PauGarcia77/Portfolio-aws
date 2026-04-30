@@ -29,13 +29,7 @@ const proyectos = [
     titulo: 'Portfolio AWS',
     descripcion: 'Web estática desplegada con S3, CloudFront, ACM y Route 53. CI/CD con GitHub Actions.',
     tags: ['S3', 'CloudFront', 'Route 53', 'ACM', 'GitHub Actions'],
-    link: 'https://github.com/tuperfil'
-  },
-  {
-    titulo: 'Pipeline DevSecOps',
-    descripcion: 'Pipeline CI/CD con análisis SAST, DAST y despliegue automatizado en AWS.',
-    tags: ['GitHub Actions', 'SAST', 'AWS', 'Docker'],
-    link: 'https://github.com/tuperfil'
+    link: 'https://github.com/PauGarcia77/Portfolio-aws'
   }
 ]
 </script>
