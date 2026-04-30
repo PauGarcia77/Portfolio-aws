@@ -4,9 +4,9 @@
       <div class="flex flex-col md:flex-row items-center gap-12">
         <!-- Avatar -->
         <div class="relative flex-shrink-0 animate-fade-up">
-          <div class="absolute inset-0 bg-white/10 rounded-full blur-2xl animate-float"></div>
-          <div class="relative w-32 h-32 md:w-36 md:h-36 rounded-full bg-gradient-to-br from-white via-neutral-300 to-neutral-600 p-[2px]">
-            <div class="w-full h-full rounded-full bg-black flex items-center justify-center">
+          <div class="absolute inset-0 bg-black/10 rounded-full blur-2xl animate-float"></div>
+          <div class="relative w-32 h-32 md:w-36 md:h-36 rounded-full bg-gradient-to-br from-neutral-900 via-neutral-700 to-neutral-400 p-[2px]">
+            <div class="w-full h-full rounded-full bg-white flex items-center justify-center">
               <span class="text-4xl font-bold text-gradient">PG</span>
             </div>
           </div>
@@ -14,19 +14,19 @@
 
         <!-- Texto -->
         <div class="text-center md:text-left">
-          <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white animate-fade-up">
+          <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-neutral-900 animate-fade-up">
             Hola, soy <span class="text-gradient">Pau García</span>
           </h1>
-          <p class="text-neutral-400 mt-3 text-lg md:text-xl font-medium animate-fade-up delay-100">
+          <p class="text-neutral-600 mt-3 text-lg md:text-xl font-medium animate-fade-up delay-100">
             Cloud Engineer · DevSecOps · AWS
           </p>
-          <p class="text-neutral-400 mt-5 max-w-xl text-sm md:text-base leading-relaxed animate-fade-up delay-200">
+          <p class="text-neutral-600 mt-5 max-w-xl text-sm md:text-base leading-relaxed animate-fade-up delay-200">
             Apasionado del desarrollo de software, terminando mi FP Superior en DAM y adentrándome en el mundo cloud.
             Aprendiendo AWS, DevOps y todo lo que rodea a la ingeniería en la nube con ganas de crecer y construir cosas que escalen.
           </p>
           <div class="flex gap-2 mt-6 flex-wrap justify-center md:justify-start animate-fade-up delay-300">
             <span v-for="tag in tags" :key="tag"
-              class="glass text-neutral-200 text-xs font-medium px-3 py-1.5 rounded-full hover:border-white/30 hover:text-white transition-colors">
+              class="glass text-neutral-800 text-xs font-medium px-3 py-1.5 rounded-full hover:border-black/30 hover:text-black transition-colors">
               {{ tag }}
             </span>
           </div>
