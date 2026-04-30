@@ -1,10 +1,10 @@
 <script setup>
-import NavBar from './frontend/components/NavBar.vue'
-import HeroSection from './frontend/components/HeroSection.vue'
-import ProyectosSection from './frontend/components/ProyectosSection.vue'
-import CertificacionesSection from './frontend/components/CertificacionesSection.vue'
-import EducacionSection from './frontend/components/EducacionSection.vue'
-import ContactoSection from './frontend/components/ContactoSection.vue'
+import NavBar from './components/NavBar.vue'
+import HeroSection from './components/HeroSection.vue'
+import ProyectosSection from './components/ProyectosSection.vue'
+import CertificacionesSection from './components/CertificacionesSection.vue'
+import EducacionSection from './components/EducacionSection.vue'
+import ContactoSection from './components/ContactoSection.vue'
 </script>
 
 <template>
