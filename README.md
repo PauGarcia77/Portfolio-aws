@@ -1,10 +1,10 @@
-# 🌐 Portfolio Personal
+# Portfolio Personal
 
 > Web estática desplegada con S3, CloudFront, ACM y Route 53. CI/CD con GitHub Actions.
 
 ---
 
-## 🚀 Stack & Infraestructura
+## Stack & Infraestructura
 
 | Servicio | Uso |
 |---|---|
@@ -16,7 +16,7 @@
 
 ---
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 ```
 Usuario
@@ -33,7 +33,7 @@ S3 Bucket (contenido estático)
 
 ---
 
-## ⚙️ CI/CD
+## CI/CD
 
 Cada push a `main` lanza automáticamente un workflow de GitHub Actions que sincroniza los archivos con el bucket de S3 e invalida la caché de CloudFront.
 
@@ -45,7 +45,7 @@ Cada push a `main` lanza automáticamente un workflow de GitHub Actions que sinc
 
 ---
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 portfolio/
@@ -61,7 +61,7 @@ portfolio/
 
 ---
 
-## 🛠️ Deploy manual
+## Deploy manual
 
 Si quieres desplegar manualmente:
 
@@ -77,7 +77,7 @@ aws cloudfront create-invalidation \
 
 ---
 
-## 📌 Sobre este proyecto
+## Sobre este proyecto
 
 Portfolio personal desarrollado mientras finalizo el **Grado Superior en DAM**, con el que empiezo a explorar el ecosistema **AWS, DevOps y Cloud Engineering**. Este proyecto es mi primer paso práctico en infraestructura cloud real.
 
